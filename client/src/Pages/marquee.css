@@ -1,0 +1,17 @@
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* يبدأ النص من اليمين */
+  }
+  100% {
+    transform: translateX(-600%); /* ينتهي النص عند اليسار */
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 120s linear infinite; /* ضبط الزمن حسب الحاجة */
+}
+
+.inline-block-marquee {
+  padding-right: 150px; /* تباعد بين النصين */
+}
